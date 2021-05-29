@@ -1,0 +1,31 @@
+body {
+    font-family:chess;
+    /* margin: 0; */
+    background-color:#000;
+}
+
+.square {
+    background:rgba(196, 107, 43, 0);
+    display:inline-block;
+    border:1px solid #fff;
+    text-align:center;
+    position: absolute;
+    cursor: pointer;
+    transform: translate(-340px,-10%)
+}
+
+.board{
+    position: absolute;
+    text-align: center;
+    justify-content:center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    background: url(./img/wood.webp)
+}
+@media (max-width:576px){
+    .scale, .board{
+        transform: scale(0.5) translate(-100%, -100%)
+    }
+}
